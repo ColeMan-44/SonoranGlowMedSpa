@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" fill="none">
+  <defs>
+    <linearGradient id="wall" x2="1" y2="1"><stop stop-color="#e9dfcf"/><stop offset="1" stop-color="#c5b79d"/></linearGradient>
+    <linearGradient id="arch" x2="0" y2="1"><stop stop-color="#b98363"/><stop offset="1" stop-color="#e2b991"/></linearGradient>
+    <linearGradient id="bottle" x2="1"><stop stop-color="#9b582f"/><stop offset=".38" stop-color="#c58b52"/><stop offset=".7" stop-color="#b37744"/><stop offset="1" stop-color="#72442c"/></linearGradient>
+    <linearGradient id="stone" x2="0" y2="1"><stop stop-color="#eee8da"/><stop offset="1" stop-color="#b4ac95"/></linearGradient>
+    <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#849379"/><stop offset="1" stop-color="#3c5040"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#fff4d7" stop-opacity=".8"/><stop offset="1" stop-color="#fff4d7" stop-opacity="0"/></radialGradient>
+    <filter id="shadow"><feGaussianBlur stdDeviation="11"/></filter>
+    <filter id="texture"><feTurbulence type="fractalNoise" baseFrequency=".6" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".06"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+  </defs>
+  <g filter="url(#texture)">
+    <path fill="url(#wall)" d="M0 0h640v760H0z"/>
+    <path d="M118 510V260a202 202 0 0 1 404 0v250Z" fill="#b4a28b"/>
+    <path d="M137 510V264a183 183 0 0 1 366 0v246Z" fill="url(#arch)"/>
+    <circle cx="333" cy="237" r="81" fill="#f4dba8"/>
+    <circle cx="333" cy="237" r="145" fill="url(#light)"/>
+    <path d="M137 413q100-116 203-45t163-13v155H137Z" fill="#a89778"/>
+    <path d="M137 454q97-75 215-8t151-8v72H137Z" fill="#7d8266"/>
+    <path d="M0 510h640v250H0z" fill="#d1c2a8"/>
+    <path d="m0 627 640-81v214H0Z" fill="#c5b397" opacity=".5"/>
+    <ellipse cx="344" cy="665" rx="183" ry="26" fill="#68543e" opacity=".22" filter="url(#shadow)"/>
+    <path d="M175 584a116 32 0 0 1 232 0v66a116 32 0 0 1-232 0Z" fill="url(#stone)"/>
+    <ellipse cx="291" cy="584" rx="116" ry="32" fill="#eee7d8"/>
+    <path d="M182 616q100 39 218 0m-206 30q94 30 190 0" stroke="#b0aa94" opacity=".4"/>
+    <rect x="249" y="409" width="90" height="171" rx="16" fill="url(#bottle)"/>
+    <path d="M265 429v127" stroke="#f1cf97" stroke-width="6" opacity=".4" stroke-linecap="round"/>
+    <rect x="260" y="388" width="68" height="32" rx="5" fill="#393c30"/>
+    <rect x="275" y="348" width="38" height="48" rx="15" fill="#4a4d3e"/>
+    <rect x="249" y="463" width="90" height="83" fill="#f2ebd8"/>
+    <circle cx="294" cy="486" r="8" stroke="#a36f49"/>
+    <path d="M281 486h-4m34 0h-4m-13-13v-4m0 34v-4" stroke="#a36f49"/>
+    <path d="M271 515h46m-37 9h28" stroke="#857960" stroke-width="2"/>
+    <ellipse cx="438" cy="645" rx="54" ry="17" fill="#a6957d"/>
+    <path d="m386 610 10 35q43 27 84 0l10-35Z" fill="#e7dfca"/>
+    <ellipse cx="438" cy="610" rx="52" ry="17" fill="#f3eddd"/>
+    <ellipse cx="438" cy="610" rx="38" ry="9" fill="#d3c8ae"/>
+    <g fill="url(#leaf)">
+      <path d="M114 591Q46 510 37 378q90 105 77 213Z"/>
+      <path d="M114 591Q96 450 147 335q21 155-33 256Z"/>
+      <path d="M114 591q4-123 99-186-24 123-99 186Z"/>
+      <path d="M114 591Q40 559 4 473q92 36 110 118Z"/>
+      <path d="M114 591q50-87 132-93-60 91-132 93Z"/>
+    </g>
+    <g stroke="#a7af8b" opacity=".7"><path d="m114 591 30-231m-30 231L47 401m67 190 86-169M114 591l114-84"/></g>
+    <path d="M73 587h83l-11 80q-30 13-60 0Z" fill="#b17f61"/>
+    <ellipse cx="114" cy="587" rx="42" ry="10" fill="#93684f"/>
+    <path d="m85 611 61 0m-58 9h55" stroke="#cf9e7b" stroke-width="2"/>
+  </g>
+</svg>

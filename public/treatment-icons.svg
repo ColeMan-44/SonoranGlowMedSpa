@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="refresh" viewBox="0 0 180 130">
+    <circle cx="90" cy="65" r="53" fill="#e9dece"/>
+    <g fill="none" stroke="#9a603f" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M90 25C62 26 51 47 55 68c2 16 14 27 20 31l-2 15m39-81c10 12 7 27 4 34l10 16-12 4c1 14-8 23-25 19m17-43c4-2 8-2 11 0m-12 26 10 1"/><path d="m142 29 3 10 10 3-10 3-3 10-3-10-10-3 10-3Z"/></g>
+  </symbol>
+  <symbol id="renew" viewBox="0 0 180 130">
+    <circle cx="90" cy="65" r="53" fill="#e0e3d4"/>
+    <g fill="none" stroke="#677654" stroke-width="1.7" stroke-linecap="round"><path d="M90 111V42m0 48c-29 1-42-14-44-37 27 0 42 14 44 37Zm0-16c26 0 40-16 42-40-27 2-39 15-42 40Zm0-17c-15-14-14-33 0-47 15 15 15 33 0 47Z"/><path d="M40 96q44 28 99-3m-4-9 5 9-10 3"/></g>
+  </symbol>
+  <symbol id="radiate" viewBox="0 0 180 130">
+    <circle cx="90" cy="65" r="53" fill="#edddc5"/>
+    <g fill="none" stroke="#ac784c" stroke-width="1.7" stroke-linecap="round"><circle cx="90" cy="65" r="23"/><circle cx="90" cy="65" r="31" stroke-dasharray="1 7"/><path d="M90 17v8m0 80v8M42 65h8m80 0h8M56 31l6 6m56 56 6 6M56 99l6-6m56-56 6-6"/><path d="m147 19 2 7 7 2-7 2-2 7-2-7-7-2 7-2Z"/></g>
+  </symbol>
+  <symbol id="restore" viewBox="0 0 180 130">
+    <circle cx="90" cy="65" r="53" fill="#e1e3d7"/>
+    <g fill="none" stroke="#6b7759" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M90 18C81 36 62 53 62 73a28 28 0 0 0 56 0c0-20-19-37-28-55Z"/><path d="M73 74c0 10 7 17 17 17m-6-28h12m-6-6v12m48-40v16m-8-8h16"/></g>
+  </symbol>
+</svg>
