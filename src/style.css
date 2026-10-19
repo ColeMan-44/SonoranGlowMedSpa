@@ -90,3 +90,8 @@ footer .brand-sun{font-size:0;width:37px;height:37px}
   #about .about-copy{text-align:center}
   #about .about-copy>p{margin-inline:auto}
 }
+
+/* Illustrated medallions echo the full-size service artwork. */
+.treatment-card .service-icon{display:block;width:130px;max-width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:50%;margin:22px auto 26px}
+.service-directory-card .service-icon{display:block;width:110px;max-width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:50%;margin:20px auto}
+@media(max-width:700px){.treatment-card .service-icon{width:105px;margin:18px auto 22px}.service-directory-card .service-icon{width:95px;margin:18px auto}}
