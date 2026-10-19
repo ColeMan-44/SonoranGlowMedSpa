@@ -52,7 +52,7 @@ On Windows PowerShell, use `npm.cmd` instead of `npm` if necessary. For an exist
 - `/contact.html` — Contact information and the demo consultation form.
 - `/team.html` — Kym Buchanan’s biography and a portrait placeholder.
 
-All four pages are included in the production build through `vite.config.js`. The site is intended for local preview for now; no hosting account or environment publication is required.
+All four pages are included in the production build through `vite.config.js`. The site can run locally or deploy to GitHub Pages. No cloud development environment publication is required.
 
 ## Build and preview
 
@@ -74,3 +74,16 @@ Requires Node.js 20.19+ or 22.12+; Node.js 24 is recommended. Install dependenci
 - The first-time client **15% off** offer is demo content; confirm terms before launch.
 
 The original SVG artwork is stored locally. Google Fonts supplies optional web fonts, with system font fallbacks. Scroll animations respect reduced-motion preferences. Service illustrations scroll naturally with the page, and the mobile Call / Consultation bar appears on all pages.
+
+## GitHub Pages
+
+The workflow at `.github/workflows/deploy-pages.yml` builds and deploys `main` automatically. Relative page and asset paths support the repository subfolder as well as local development.
+
+One-time GitHub setup:
+
+1. Open the repository’s **Settings → Pages**.
+2. Under **Build and deployment**, select **GitHub Actions** as the source.
+3. Open **Actions → Deploy to GitHub Pages**. If the initial run failed before Pages was enabled, rerun it or choose **Run workflow** on `main`.
+4. After deployment succeeds, open `https://ColeMan-44.github.io/SonoranGlowMedSpa/`.
+
+Every push to `main` publishes an update. Pushes to `dev` do not deploy. The published website includes all demo labels, placeholder contact details, and the local-only consultation form; GitHub Pages does not send form messages. Hosting availability depends on repository visibility and the GitHub account’s plan.

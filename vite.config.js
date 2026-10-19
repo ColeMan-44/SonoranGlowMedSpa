@@ -2,6 +2,8 @@ import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
 
 export default defineConfig({
+  // Keep the built site portable across localhost and GitHub Pages subfolders.
+  base: './',
   build: {
     rollupOptions: {
       input: {
