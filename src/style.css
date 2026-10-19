@@ -111,3 +111,14 @@ footer .brand-sun{font-size:0;width:37px;height:37px}
   .service-directory-card h2{font-size:31px}
   .directory-caption{font-size:12px;min-height:0;text-align:left}
 }
+
+/* Keep the entire welcome story on one shared centerline at every width. */
+#about{grid-template-columns:minmax(0,1fr);justify-items:center;gap:30px;text-align:center}
+#about .section-label{display:grid;grid-template-columns:minmax(0,1fr);justify-items:center;gap:16px;width:100%;padding-top:0;text-align:center}
+#about .section-label .little-sun{margin:0}
+#about .section-label .eyebrow{max-width:none;margin:0;text-align:center}
+#about .botanical-profile{grid-column:auto;width:180px;max-width:100%;height:auto;margin:0}
+#about .about-copy{width:100%;max-width:640px;margin:0 auto;text-align:center}
+#about .about-copy h2{margin-top:0;text-align:center}
+#about .about-copy>p{max-width:560px;margin-inline:auto;text-align:center}
+@media(max-width:700px){#about{gap:25px}#about .botanical-profile{width:150px}}
