@@ -95,3 +95,19 @@ footer .brand-sun{font-size:0;width:37px;height:37px}
 .treatment-card .service-icon{display:block;width:130px;max-width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:50%;margin:22px auto 26px}
 .service-directory-card .service-icon{display:block;width:110px;max-width:100%;height:auto;aspect-ratio:1;object-fit:contain;border-radius:50%;margin:20px auto}
 @media(max-width:700px){.treatment-card .service-icon{width:105px;margin:18px auto 22px}.service-directory-card .service-icon{width:95px;margin:18px auto}}
+
+/* Give illustrated service cards enough room on narrow screens. */
+.treatment-card .service-icon,.service-directory-card .service-icon{flex:none;align-self:center}
+@media(max-width:600px){
+  .treatment-grid,.service-directory{grid-template-columns:minmax(0,1fr);gap:20px}
+  .treatment-card{padding:28px;text-align:center}
+  .treatment-card .service-icon{width:145px;height:145px;margin:24px auto}
+  .treatment-card h3{font-size:31px}
+  .treatment-card p{font-size:12px}
+  .treatment-card .service-list{font-size:11px;min-height:0;margin-bottom:24px}
+  .treatment-card a{font-size:12px;text-align:left}
+  .service-directory-card{padding:25px 28px;text-align:center}
+  .service-directory-card .service-icon{width:140px;height:140px;margin:20px auto}
+  .service-directory-card h2{font-size:31px}
+  .directory-caption{font-size:12px;min-height:0;text-align:left}
+}
