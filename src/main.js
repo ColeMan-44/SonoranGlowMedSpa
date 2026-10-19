@@ -14,9 +14,27 @@ navigation.querySelectorAll('a').forEach((link) => {
   });
 });
 const dialog = document.querySelector('#consultation-dialog');
-document.querySelector('#consultation-button').addEventListener('click', () => dialog.showModal());
-dialog.querySelectorAll('button').forEach((button) => button.addEventListener('click', () => dialog.close()));
-dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+const consultationButton = document.querySelector('#consultation-button');
+if (dialog && consultationButton) {
+  consultationButton.addEventListener('click', () => dialog.showModal());
+  dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+}
+
+document.querySelectorAll('[data-consultation-form]').forEach((form) => {
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const fields = [...form.querySelectorAll('input, textarea')];
+    fields.forEach((field) => field.setCustomValidity(field.value.trim() ? '' : 'Please complete this field.'));
+    if (!form.reportValidity()) return;
+    const status = form.querySelector('.form-status');
+    status.textContent = 'Thanks for trying the form! This is a demo — your message has not been sent. Message delivery is coming soon.';
+  });
+  form.addEventListener('input', (event) => {
+    if (event.target.matches('input, textarea')) event.target.setCustomValidity('');
+    form.querySelector('.form-status').textContent = '';
+  });
+});
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 // Keep content visible without JavaScript and when reduced motion is preferred.

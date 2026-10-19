@@ -14,3 +14,7 @@ The site includes a mobile navigation menu and a consultation information dialog
 ## Services
 
 Open `/services.html` for injectables, wellness, rejuvenation, and regenerative care. Homepage treatment cards link to the relevant category. Treatment details use native, keyboard-accessible expandable panels. The production build includes both HTML pages through `vite.config.js`. All service artwork is local SVG.
+
+## Contact and team
+
+`/contact.html` includes a name, email, and message form. The same demo form opens from the homepage and Services consultation buttons. Submission validates fields locally and explicitly states that no message was sent; no backend, email service, or data storage is connected. `/team.html` features Kym’s supplied biography and a labeled portrait placeholder. Address, phone, hours, Facebook, and Instagram are placeholders; replace them before launch. The 15% first-visit banner links to the placeholder telephone number.
