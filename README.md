@@ -1,0 +1,12 @@
+# Sonoran Glow Med Spa
+
+A responsive homepage for Sonoran Glow Med Spa in Tucson, Arizona. Built with HTML, CSS, JavaScript, and Vite. Requires Node.js 20.19+ or 22.12+ (validated with Node.js 24).
+
+```sh
+npm ci
+npm run dev
+```
+
+Create a production build with `npm run build`; serve that build with `npm run preview`.
+
+The site includes a mobile navigation menu and a consultation information dialog. Booking is not connected: add verified contact details or a scheduling provider before launch. No appointment information is collected. The desert illustration and favicon are local SVGs. Google Fonts supplies the optional web fonts; system serif and sans-serif fonts are used as fallbacks.
