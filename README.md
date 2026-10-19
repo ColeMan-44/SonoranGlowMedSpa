@@ -18,3 +18,7 @@ Open `/services.html` for injectables, wellness, rejuvenation, and regenerative 
 ## Contact and team
 
 `/contact.html` includes a name, email, and message form. The same demo form opens from the homepage and Services consultation buttons. Submission validates fields locally and explicitly states that no message was sent; no backend, email service, or data storage is connected. `/team.html` features Kym’s supplied biography and a labeled portrait placeholder. Address, phone, hours, Facebook, and Instagram are placeholders; replace them before launch. The 15% first-visit banner links to the placeholder telephone number.
+
+## First visit and demo content
+
+The homepage includes the first-visit guide, native expandable FAQs, photo placeholders, and three clearly labeled sample testimonials (not real reviews). Replace testimonials with approved real reviews before launch. A mobile-only Call / Consultation bar appears on all pages; the call link uses the existing placeholder number and consultation links to the demo contact form. Photo placeholders are local illustrations, not photographs of Kym or the studio.
