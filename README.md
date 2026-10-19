@@ -10,3 +10,7 @@ npm run dev
 Create a production build with `npm run build`; serve that build with `npm run preview`.
 
 The site includes a mobile navigation menu and a consultation information dialog. Booking is not connected: add verified contact details or a scheduling provider before launch. No appointment information is collected. The desert landscape, botanical portrait, treatment illustrations, spa still life, and favicon are original local SVGs. Scroll reveals respect reduced-motion preferences. Google Fonts supplies the optional web fonts; system serif and sans-serif fonts are used as fallbacks.
+
+## Services
+
+Open `/services.html` for injectables, wellness, rejuvenation, and regenerative care. Homepage treatment cards link to the relevant category. Treatment details use native, keyboard-accessible expandable panels. The production build includes both HTML pages through `vite.config.js`. All service artwork is local SVG.
